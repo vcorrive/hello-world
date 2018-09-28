@@ -5,7 +5,7 @@ import json
 
 def get_cookies(apic):
 	username = 'admin'
-	password = 'cisco123'
+	password = 'ciscoapic'
 	url = apic + '/api/aaaLogin.json'
 	auth = dict(aaaUser=dict(attributes=dict(name=username, pwd=password)))
 	authenticate = requests.post(url, data=json.dumps(auth), verify=False)
